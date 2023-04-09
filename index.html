@@ -7,7 +7,7 @@
     <title>BEM</title>
 </head>
 <body>
-    
+
     голова
         голова__глаза--голубые
         голова__волосы--светлые
@@ -60,6 +60,19 @@
 
 <!-- form.form>input.form_name+input.form_email+.form_company_position>input.form_company+input.form_position^input.comment+button.btn -->
 
+<div class="Block_foto_text">
+    <div class="Block_img">
+        <img src="" alt="" class="Picture">
+        <div class="Loader"></div>
+    </div>
+    <div class="Block_text">
+        <h5 class="Headline"></h5>
+        <p></p>
+    </div>
+</div>
+
+<!-- .Block_foto_text>.Block_img>img.Picture+.Loader^.Block_text>h5.Headline+p -->
+
 <div class="card">
     <div class="box_card">
         <img src="" alt="" class="card_prica">
@@ -76,19 +89,6 @@
 </div>
 
 <!-- .card>.box_card>img.card_prica*4^.box_card>img.card_prica*4 -->
-
-<div class="Block_foto_text">
-    <div class="Block_img">
-        <img src="" alt="" class="Picture">
-        <div class="Loader"></div>
-    </div>
-    <div class="Block_text">
-        <h5 class="Headline"></h5>
-        <p></p>
-    </div>
-</div>
-
-<!-- .Block_foto_text>.Block_img>img.Picture+.Loader^.Block_text>h5.Headline+p -->
 
 </body>
 </html>
