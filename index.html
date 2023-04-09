@@ -7,8 +7,88 @@
     <title>BEM</title>
 </head>
 <body>
-
-    <p>test</p>
     
+    голова
+        голова__глаза--голубые
+        голова__волосы--светлые
+        голова__нос
+    тело
+        тело__спина
+        тело__плечи
+        тело__шея
+    рука
+        рука__локоть
+        рука__запястье
+        рука__пальцы--длинные
+
+<header class="header">
+        <nav class="header_nav">
+            <div class="header_logo"><a href="">VADE</a></div>
+            <div class="box">
+            <div class="nav_box_menu">
+                <a class="header__item_1" href="">FORM</a>
+                <a class="header__item_1" href="">LOADER</a>
+                <a class="header__item_1" href="">technology</a>
+                <a class="header__item_1" href="">about us</a>
+                <a class="header__item_1" href="">impact</a>
+                <a class="header__item_1" href="">portfolio</a>
+                <a class="header__item_1" href="">blog</a>
+                <a class="header__item_2" href="">book a demo</a>
+            </div>
+            <div class="nav_box_JS">
+                <a class="header__item_1" href="">JS_9</a>
+                <a class="header__item_1" href="">JS_10</a>
+                <a class="header__item_1" href="">JS_11</a>
+                <a class="header__item_1" href="">JS_12</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- header.header>nav.header_nav>.header_logo>a^(.box>(.nav_box_menu>a.header__item_1*7+a.header__item_2)+(.nav_box_JS>a.header__1*4))-->
+  
+<form action="" class="form">
+    <input type="text" class="form_name">
+    <input type="text" class="form_email">
+    <div class="form_company_position">
+        <input type="text" class="form_company">
+        <input type="text" class="form_position">
+    </div>
+    <input type="text" class="comment">
+    <button class="btn"></button>
+</form>
+
+<!-- form.form>input.form_name+input.form_email+.form_company_position>input.form_company+input.form_position^input.comment+button.btn -->
+
+<div class="card">
+    <div class="box_card">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+    </div>
+    <div class="box_card">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+        <img src="" alt="" class="card_prica">
+    </div>
+</div>
+
+<!-- .card>.box_card>img.card_prica*4^.box_card>img.card_prica*4 -->
+
+<div class="Block_foto_text">
+    <div class="Block_img">
+        <img src="" alt="" class="Picture">
+        <div class="Loader"></div>
+    </div>
+    <div class="Block_text">
+        <h5 class="Headline"></h5>
+        <p></p>
+    </div>
+</div>
+
+<!-- .Block_foto_text>.Block_img>img.Picture+.Loader^.Block_text>h5.Headline+p -->
+
 </body>
 </html>
